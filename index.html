@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage your Cash</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="/ima.jpg">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Cash Register Manager</h1>
+        <p class="para">Enter the bill amount and cash given by the 
+            customer <br> <br>
+            and know minimum number of notes to be returned.
+        </p>
+        <label for="bill">Bill Amount:</label>
+        <input id="bill" type="text">
+        <label for="cash">Cash Given:</label>
+        <input id="cash" type="text">
+        <button id="btn">Check</button>
+        <p id="error"></p>
+        <table class="change-table">
+            <caption id="return">Return Change</caption>
+            <tr>
+                <th>No of notes</th>
+                <td class="col"></td>
+                <td class="col"></td>
+                <td class="col"></td>
+                <td class="col" ></td>
+                <td class="col" ></td>
+                <td class="col" ></td>
+                <td class="col" ></td>
+            </tr>
+            <tr>
+                <th class="coll" >Notes</th>
+                <td class="coll" >2000</td>
+                <td class="coll" >500</td>
+                <td class="coll" >100</td>
+                <td class="coll" >20</td>
+                <td class="coll" >10</td>
+                <td class="coll" >5</td>
+                <td class="coll" >1</td>
+        </table>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+<!-- 
+Your program has currencies of Rs. 1, 5, 10, 20, 100, 500, 2000.
+Your user enters a bill amount say Rs. 243.
+Your user then enters a cash given say Rs. 2000.
+Now, help the user by telling how can he/she return the change to the customer with minimum number of notes? -->
